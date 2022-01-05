@@ -21,7 +21,18 @@
     <module>webapp</module>
   </modules>
 
-
+       <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>control.example.com-releases</name>
+        <url>http://192.168.100.150:8081/artifactory/maven-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>control.example.com-snapshots</name>
+        <url>http://192.168.100.150:8081/artifactory/maven-repo</url>
+    </snapshotRepository>
+</distributionManagement>
 
   <build>
     <plugins>
@@ -198,18 +209,6 @@
         <scope>test</scope>
       </dependency>
     </dependencies>
-       <distributionManagement>
-    <repository>
-        <id>central</id>
-        <name>control.example.com-releases</name>
-        <url>http://192.168.100.150:8081/artifactory/maven-repo</url>
-    </repository>
-    <snapshotRepository>
-        <id>snapshots</id>
-        <name>control.example.com-snapshots</name>
-        <url>http://192.168.100.150:8081/artifactory/maven-repo</url>
-    </snapshotRepository>
-</distributionManagement>
   </dependencyManagement>
 
   <scm>

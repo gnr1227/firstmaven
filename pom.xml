@@ -23,9 +23,9 @@
 
   <distributionManagement>
     <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
+      <id>jfrog-1</id>
+      <name>myproject</name>
+      <url>http://192.168.100.150:8082/artifactory/maven-repo</url>
     </site>
   </distributionManagement>
 
